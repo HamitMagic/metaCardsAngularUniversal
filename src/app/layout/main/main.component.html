@@ -1,0 +1,14 @@
+@for (card of cards; track card) {
+	<div (click)="setSelected($event, card)" cdkDrag cdkDragBoundary="main">
+			<div class="btns">
+					<img id='content-isOpen' src="./assets/svg/turn.svg" (click)="setIsOpen(card)" />
+					<img id='content-close' src="./assets/svg/close.svg" (click)="removeCard(card)"/>
+			</div>
+			<img class="card-item" [class]="card.isSelected ? 'selected' : 'card-item'" [(src)]="card.isOpen ? card.path : card.backOfCard" />
+	</div>
+}
+
+<!-- <div className={classes.deckOfCards} ref={elementRef} style={{left: left, zIndex: zIndex}} onMouseDown={() => {
+            setZindex(zInd + 1);
+            setZind(zInd + 1);
+        }}> -->

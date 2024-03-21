@@ -1,0 +1,10 @@
+<a href="/"><img class='header-img' src='../../../assets/svg/home.svg' routerLink=""/></a>
+<div class="right">
+    <img (click)="openDialog('Выберите колоду карт', copyDialog)" class='header-img' src='../../../assets/svg/cardList.svg' />
+    <!-- <img (click)="openDialog('Создан удаленный сеанс')" class='header-img' src='../../../assets/svg/remote.svg' /> -->
+    <img (click)="toggleFullScreen()" class='header-img' src='../../../assets/svg/fullscreen.svg' />
+    <!-- <img (click)="openDialog('Настройки')" class='header-img' src='../../../assets/svg/settings.svg' /> -->
+</div>
+<ng-template #copyDialog>
+    <app-copy-dialog />
+</ng-template>

@@ -1,0 +1,50 @@
+:host {
+    height: fit-content;
+    width: 100%;
+    position: relative;
+    flex:auto;
+    display: flex;
+    gap: 16px;
+    flex-flow: row wrap;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.card-item {
+    height: 150px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    cursor: move;
+    transition: ease-out 0.5s;
+}
+
+.btns #content-isOpen, .btns #content-close {
+    top: -10px;
+    position: absolute;
+    padding: 4px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 0;
+}
+
+#content-close {
+    right: -4px;
+}
+
+#content-isOpen {
+    left: -4px;
+}
+
+.selected {
+    border: 1px solid;
+    box-sizing: border-box;
+    transform: scale(1.1);
+    transition: ease-in 0.5s;
+}

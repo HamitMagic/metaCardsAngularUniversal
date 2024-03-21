@@ -1,0 +1,19 @@
+.video {
+    display: grid;
+    grid-template-columns: 2fr;
+    position: absolute;
+    right: 4px;
+    top: 66px;
+    width: 320px;
+    height: 180px;
+}
+.local {
+    background-color: black;
+    z-index: 2;
+}
+.remote {
+    top: 0;
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+}

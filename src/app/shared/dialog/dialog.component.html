@@ -1,0 +1,10 @@
+<p class="dialog-title">{{data.title}}</p>
+<div class="content-wrapper">
+	<!-- {{data.component}} -->
+	<ng-container [ngTemplateOutlet]="data.component">
+
+	</ng-container>
+</div>
+<div class="button-close">
+	<button (click)="dialogRef.close()">Закрыть</button>
+</div>

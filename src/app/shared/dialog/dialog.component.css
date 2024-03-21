@@ -1,0 +1,13 @@
+:host {
+	background: white;
+	display: block;
+  border-radius: 8px;
+  padding: 8px 16px 16px;
+}
+.dialog-title {
+	text-align: center;
+}
+.button-close {
+	display: flex;
+	justify-content: end;
+}

@@ -1,0 +1,23 @@
+<div class="footer-btn">
+    <button mat-button title="открыть" (click)="setIsOpen()">
+        <img src="../../../assets/svg/turn.svg"/>
+        {{isOpen ? 'закрыть' : 'открыть'}}
+    </button>
+    <button mat-button title="перемешать" (click)="shuffleArray()">
+        <img src="../../../assets/svg/shuffle.svg"/>
+        перемешать
+    </button>
+    <button mat-button title="показать нумерацию" (click)="setIsNumbersShown()">
+        {{isNumbersShown ? 'скрыть ' : 'показать '}} нумерацию
+    </button>
+</div>
+<div class="footer-cards">
+    @for (card of cards; track $index) {
+			<div>
+        @if (isNumbersShown) {<span class="index" >{{$index+1}}</span>}
+        @if (isOpen) {<img class="card-item" [src]="card" (click)="removeCard(card)" />}
+        @else {<img class="card-item" [src]="backOfCards" (click)="removeCard(card)" />}
+    	</div>
+		}
+		
+</div>

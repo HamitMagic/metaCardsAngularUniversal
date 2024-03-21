@@ -1,0 +1,40 @@
+:host {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    gap: 8px;
+    flex-flow: column nowrap;
+    margin: 0 8px;
+    border-radius: 10px;
+    margin: 8px 16px;
+    backdrop-filter: grayscale(0.4);   
+}
+
+.index {
+    text-align: center;
+    display: block;
+}
+
+.card-item {
+    border-radius: 10px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.footer-cards {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+    width: 100%;
+    overflow: auto;
+}
+
+.footer-btn {
+    display: flex;
+    justify-content: start;
+    flex-flow: row nowrap;
+    gap: 8px;
+}
+.manage-cards {
+    cursor: pointer;
+}
